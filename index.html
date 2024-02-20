@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="./images/calculator-icon.png">
+    <script src="https://kit.fontawesome.com/e224abafd1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="heading"><i class="fa-solid fa-calculator"></i> Calculator</h1>
+    <div class="container">
+         <div class="main">
+            <div class="toggler">
+                <button class="btn btn-toggler"></button>
+            </div>
+            
+            <div class="displays">
+                <input class="screen" type="display" readonly>
+            </div>
+
+            <div class="buttons">
+                <button class="btn colors" onclick = "myClear()">AC</button>
+                <button class="btn colors" onclick = "myValues('%')"><i class="fa-solid fa-percent"></i></button>
+                <button class="btn colors" onclick = "myDelete()"><i class="fa-solid fa-delete-left"></i></button>
+                <button class="btn colors" onclick = "myValues('/')"><i class="fa-solid fa-divide"></i></button>
+                <button class="btn new" onclick = "myValues('7')">7</button>
+                <button class="btn new" onclick = "myValues('8')">8</button>
+                <button class="btn new" onclick = "myValues('9')">9</button>
+                <button class="btn colors" onclick = "myValues('*')"><i class="fa-solid fa-xmark"></i></button>
+                <button class="btn new" onclick = "myValues('4')">4</button>
+                <button class="btn new" onclick="myValues('5')">5</button>
+                <button class="btn new" onclick="myValues('6')">6</button>
+                <button class="btn colors" onclick="myValues('-')"><i class="fa-solid fa-minus"></i></button>
+                <button class="btn new" onclick="myValues('1')">1</button>
+                <button class="btn new" onclick = "myValues('2')">2</button>
+                <button class="btn new" onclick="myValues('3')">3</button>
+                <button class="btn colors" onclick="myValues('+')"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn new" onclick ="myValues('00')">00</button>
+                <button class="btn new" onclick = "myValues('0')">0</button>
+                <button class="btn new size" onclick="myValues('.')"><i class="fa-solid fa-circle"></i></b></button>
+                <button class="btn colors" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+            </div>
+         </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>
